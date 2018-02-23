@@ -174,14 +174,13 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
-  html {
+/*  html {
     font-size: 16px;
-  }
+  }*/
   .overlay h1 {
     padding-bottom: 1rem;
   }
   .overlay h3 {
-    font-weight: normal;
     padding-bottom: 1.5rem;
     padding-top: 1.2rem;
   }
@@ -196,5 +195,50 @@ footer {
   }
   .product.glasses {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .container {
+    width: 470px;
+    justify-content: center;
+  }
+  header .container {
+    justify-content: flex-start;
+  }
+  .main .container {
+    align-items: flex-end;
+  }
+  .main {
+    height: 15rem;
+  }
+  .overlay {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin: 0;
+  }
+  .overlay h3 {
+    padding: 0 0 0.35rem 0;
+    font-size: .77rem;
+  }
+  .overlay h1 {
+    font-size: 1rem;
+    padding: 0;
+    line-height: normal;
+  }
+  .product.pen {
+    width: 90%;
+  }
+  .product.watch {
+    display: none;
+  }
+  .catalog {
+    width: 90%;
+    flex-flow: column;
+    align-items: center;
+  }
+  .location .details {
+    width: 90%;
+    margin-bottom: 1rem;
   }
 }
